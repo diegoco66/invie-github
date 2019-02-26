@@ -14,11 +14,22 @@
             max-width: 100%;
             vertical-align: top;
         }
+
+        #responsive { display: none; }
+
+        .fullsize { display: block; }
+
+        @media screen and (max-width: 768px) {
+            #responsive { display: block; }
+
+            .fullsize { display: none; }
+        }
     </style>
 </head>
 <body>
-    <img src="img/header_0fdd3fdf-3dcc-4466-8a28-4cbcc02a2c6e.jpg" alt="">
-    <img src="img/hero.png" alt="">
-    <img src="img/acustica.png" alt="">
+    <img src="img/responsive.jpg" alt="" id="responsive">
+    <img src="img/header_0fdd3fdf-3dcc-4466-8a28-4cbcc02a2c6e.jpg" alt="" class="fullsize">
+    <img src="img/hero.png" alt="" class="fullsize">
+    <img src="img/acustica.png" alt="" class="fullsize">
 </body>
 </html>
